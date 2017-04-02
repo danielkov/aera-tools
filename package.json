@@ -1,0 +1,28 @@
+{
+  "name": "aera-tools",
+  "version": "1.0.0",
+  "description": "Handy HTTP tools to use with Aera HTTP library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielkov/aera-tools.git"
+  },
+  "keywords": [
+    "tools",
+    "http",
+    "library",
+    "aera"
+  ],
+  "author": "Daniel Kovacs <kovacsemod@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielkov/aera-tools/issues"
+  },
+  "homepage": "https://github.com/danielkov/aera-tools#readme",
+  "dependencies": {
+    "co-body": "^5.1.1"
+  }
+}
