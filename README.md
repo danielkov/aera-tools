@@ -30,9 +30,9 @@ Request bodies are generally kind of hard to parse, especially of no proper cont
 ### Example usage
 
 ```js
-const { bodyParser } = require('aera-tools')
+const { parseBody } = require('aera-tools')
 
-server.post('/', (req, res) => bodyParser(req)) // this will return the body parsed into an object
+server.post('/', (req, res) => parseBody(req)) // this will return the body parsed into an object
 ```
 
 You can also do some stuff with the body, once it's been resolved.
@@ -111,4 +111,4 @@ const { static } = require('aera-tools')
 server.get(static('/public', '/my/file/folder'))
 ```
 
-The above example will serve requests coming to `/public` with the contents of `/my/file/folder`
+The above example will serve requests coming to `/public` with the contents of `/my/file/folder`.
