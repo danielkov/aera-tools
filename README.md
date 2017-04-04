@@ -2,6 +2,8 @@
 Handy HTTP tools to use with Aera HTTP library.
 ___
 
+[![Build Status](https://travis-ci.org/danielkov/aera-tools.svg?branch=master)](https://travis-ci.org/danielkov/aera-tools) [![Coverage Status](https://coveralls.io/repos/github/danielkov/aera-tools/badge.svg?branch=master)](https://coveralls.io/github/danielkov/aera-tools?branch=master) [![Dependencies](https://david-dm.org/danielkov/aera-tools.svg)](https://david-dm.org/danielkov/aera-tools) [![devDependencies Status](https://david-dm.org/danielkov/aera-tools/dev-status.svg)](https://david-dm.org/danielkov/aera-tools?type=dev) [![npm](https://img.shields.io/npm/v/aera-tools.svg?style=flat-square)](https://npmjs.com/package/aera-tools)
+
 ## List of Tools
 
   - [Http Error](#http-error) - create an Error object with HTTP specific proerties.
