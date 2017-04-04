@@ -177,7 +177,7 @@ describe('Testing static...', () => {
 
   it('Should serve static files of the folder at specified endpoint.', (done) => {
     req.get('/test/index.html')
-      .expect('Test\r\n')
+      .expect(/Test/)
       .expect(200, done)
   })
 })
