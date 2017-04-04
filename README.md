@@ -8,8 +8,8 @@ ___
   - [Body Parser](#body-parser) - turn request bodies into promises, resolving into JavaScript Objects.
   - [Compose](#compose) - if you prefer middleware-based approach, it can be done with this module.
   - [Middleware](#middleware) - create real `express`-like middleware.
-  - [Query String](#query-string) - parse request query strings more easily.
   - [Static](#static) - Serve static files even easier!
+  - [Cors](#cors) - configure Cross Origin Resource Sharing!
 
 ## Http Error
 
@@ -85,18 +85,6 @@ server.get('/', middleware(
 ))
 ```
 
-## Query String
-
-This tool will make it even easier to turn query string arguments (those thingies after URLs, like ?something=value&another=value) into usable JavaScript Objects.
-
-### Example usage
-
-```js
-const { queryString } = require('aera-tools')
-
-server.get('/', (req, res) => queryString(req)) // the response will be the JSON representation of the query string
-```
-
 ## Static
 
 **Note:** this will only work, from version `1.1.0` of Aera, due to how arguments are handled in the newer version.
@@ -108,7 +96,9 @@ Serves all files from the directory specified.
 ```js
 const { static } = require('aera-tools')
 
-server.get(static('/public', '/my/file/folder'))
+server.get(static('/public', './my/file/folder'))
 ```
 
 The above example will serve requests coming to `/public` with the contents of `/my/file/folder`.
+
+## Cors
