@@ -102,3 +102,29 @@ server.get(static('/public', './my/file/folder'))
 The above example will serve requests coming to `/public` with the contents of `/my/file/folder`.
 
 ## Cors
+
+Configure a route to use Cross Origin Resouce Sharing policies properly. Note that this will only work for the specific route you called it in, but there is nothing stopping you from adding it to all the routes you want to allow CORS on.
+
+Make sure you also configure the OPTIONS method too.
+
+### Example usage
+
+```js
+const { cors } =require('aera-tools')
+
+server.get('/', (req, res) => {
+  cors(req, res)
+  return 'Hello, World!'
+})
+
+server.options('/', cors)
+```
+
+Cors also accepts options. Here is a list of them:
+
+  - `origin` defaults to *`true`*
+  - `expose` defaults to *`''`*
+  - `maxAge` defaults to *`false`*
+  - `credentials` defaults to *`false`*
+  - `methods` defaults to *`'*'`*
+  - `headers` defaults to *`*`*, falls back to Access-Control-Request-Headers.
