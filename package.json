@@ -1,6 +1,6 @@
 {
   "name": "aera-tools",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Handy HTTP tools to use with Aera HTTP library.",
   "main": "index.js",
   "scripts": {
